@@ -139,7 +139,7 @@ public class QuestionServiceImpl implements QuestionService {
         if (answerDataList != null && answerDataList.size() > 0) {
             for (AnswerData answerData : answerDataList) {
                 // 此回答者的昵称, 拼接回答URL, 解决匿名用户/已注销/已重置用户名字重复问题
-                String username = answerData.getAuthor().getName() + answerData.getUrl();
+                String username = answerData.getAuthor().getName() + "(question=" + answerData.getQuestion().getId() + ")" + "(AnswerId=" +answerData.getId() + ")";
                 // 此回答具体内容
                 String content = answerData.getContent();
                 // 此回答中的图片地址集合

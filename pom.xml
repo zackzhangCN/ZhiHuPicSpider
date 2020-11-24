@@ -45,7 +45,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>cn.zack.ZhiHuUserInfoApplication</mainClass>
+                    <mainClass>cn.zack.ZhiHuPicSpiderApplication</mainClass>
                     <finalName>ZhiHuPicSpider</finalName>
                 </configuration>
             </plugin>
